@@ -1,0 +1,29 @@
+{
+  "name": "attic-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DictumMortuum/attic-calendar.git"
+  },
+  "keywords": [
+    "ics",
+    "attic",
+    "greek",
+    "calendar"
+  ],
+  "author": "Dimitris Raviolos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DictumMortuum/attic-calendar/issues"
+  },
+  "homepage": "https://github.com/DictumMortuum/attic-calendar#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "icalendar": "^0.7.1"
+  }
+}
