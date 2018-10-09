@@ -1,9 +1,18 @@
 const path = "./resources/www.numachi.com/~ccount/hmepa/calendars";
-const olympiad = require('./src/olympiad')(path);
-const suncalc = require('suncalc');
+const extramonth = require('./src/extramonth')(path);
+const olympiad = require('./src/olympiad');
+const light = require('./src/light');
+const month = require('./src/month');
 
-olympiad(700).then(d => console.log(d));
+extramonth().then(d => {
+  let fn = olympiad(d)(700)
+  let year = fn(3);
+  console.log(year);
+  let m = month(path + '/' + year[0]);
+  console.log(m);
+});
 
-console.log(
-  suncalc.getTimes(new Date(), 37.9838, 23.7275)
-)
+console.log(new Date(light('2018-10-04').sunset).toString())
+console.log(new Date(light('2018-10-05').sunset).toString())
+console.log(new Date(light('2018-10-06').sunset).toString())
+console.log(new Date(light('2018-10-07').sunset).toString())
