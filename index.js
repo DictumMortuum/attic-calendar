@@ -1,18 +1,26 @@
+'use strict';
+
 const path = "./resources/www.numachi.com/~ccount/hmepa/calendars";
-const extramonth = require('./src/extramonth')(path);
-const olympiad = require('./src/olympiad');
-const light = require('./src/light');
+const glob = require('glob-promise');
 const month = require('./src/parser/month');
+const ical = require('./src/ical');
+const months = require('./src/months.json');
+const names = require('./src/names');
 
-extramonth().then(d => {
-  let fn = olympiad(d)(699)
-  let year = fn(3);
-  console.log(year);
-  let m = month(path + '/' + year[0]);
-  console.log(m);
-});
+const extramonth = () => glob("[0-9]*-*", {cwd: path});
 
-console.log(new Date(light('2018-10-04').sunset).toString())
-console.log(new Date(light('2018-10-05').sunset).toString())
-console.log(new Date(light('2018-10-06').sunset).toString())
-console.log(new Date(light('2018-10-07').sunset).toString())
+const year = async (o, y) => {
+  let extra = await extramonth();
+  let fn = names.month(o)(y);
+  let res = extra.filter(d => fn('Poseideon-2') === d);
+  return res.length === 1 ? months.extra : months.normal;
+}
+
+const main = async (o, y) => {
+  let fn = names.month(o)(y);
+  let tmp = await year(o, y);
+  let res = tmp.map(m => month(path, m, fn));
+  ical(res);
+}
+
+main(699, 2);
