@@ -1,3 +1,4 @@
-resources/*
+assets/*
+!assets/www.numachi.com.tar.gz
 node_modules
 package-lock.json

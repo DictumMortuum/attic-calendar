@@ -15,4 +15,4 @@ const translate = phase => {
   }
 }
 
-module.exports = ({attic_day_start, attic_day_end}, phase) => lune.phase_range(attic_day_start, attic_day_end, translate(phase));
+module.exports = (start, end, phase) => lune.phase_range(start, end, translate(phase));
