@@ -1,30 +1,31 @@
 'use strict';
 
 const transforms = require('./festivals.json').transforms;
+const festivals = require('./festivals.json').festivals;
 const flatten = require('./util').flatten;
 const festival_re = /Images\/(.*).gif.html/;
 const is_festival = ({alt}) => alt === '';
 
 module.exports = events => {
-  let types = {};
+  let info = {};
 
-  let f = events.filter(is_festival).map(({src, type}) => {
+  let f = events.filter(is_festival).map(({src}) => {
     let [_, name] = festival_re.exec(src);
     let transform = transforms[name];
 
     if (transform) {
       transform.map(t => {
-        types[t] = type;
+        info[t] = festivals[t];
       })
       return transform;
     } else {
-      types[name] = type;
+      info[name] = festivals[name];
       return name;
     }
   });
 
   return {
-    hmepa_festival_types: types,
+    hmepa_festival_info: info,
     hmepa_festival: flatten(f)
   }
 }
