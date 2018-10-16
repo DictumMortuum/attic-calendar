@@ -1,0 +1,236 @@
+{
+  "transforms": {
+    "Noumenia_kata_Selene_Agathos_Daimon": [
+      "Noumenia_kata_Selene",
+      "Agathos_Daimon"
+    ],
+    "Eleusinia_ta_megala_Epidauria_": [
+      "Eleusinia_ta_megala",
+      "Epidauria_"
+    ],
+    "Anthesteria_Pithiogia": [
+      "Anthesteria"
+    ],
+    "Anthesteria_Khoes": [
+      "Anthesteria"
+    ],
+    "Anthesteria_Khutroi": [
+      "Anthesteria"
+    ],
+    "Lesser_Mysteries_Diasia": [
+      "Lesser_Mysteries",
+      "Diasia"
+    ],
+    "Dionusia_ta_astika_Pandia": [
+      "Dionusia_ta_astika",
+      "Pandia"
+    ],
+    "Kallunteria_Plunteria": [
+      "Kallunteria",
+      "Plunteria"
+    ]
+  },
+  "festivals": {
+    "Noumenia": {
+      "type": "recurring monthly"
+    },
+    "Athene_": {
+      "type": "recurring monthly"
+    },
+    "Aphrodite_Heracles_Hermes_and_Eros": {
+      "type": "recurring monthly"
+    },
+    "Artemis": {
+      "type": "recurring monthly"
+    },
+    "Apollon": {
+      "type": "recurring monthly"
+    },
+    "Poseidon_and_Theseus": {
+      "type": "recurring monthly"
+    },
+    "Kronia": {
+      "type": "festival"
+    },
+    "Sunoikia": {
+      "type": "festival"
+    },
+    "Panathanaia_ta_mikra": {
+      "type": "festival"
+    },
+    "Triakas": {
+      "type": "recurring monthly"
+    },
+    "Noumenia_kata_Selene": {
+      "type": "recurring monthly"
+    },
+    "Herakleia_": {
+      "type": "festival"
+    },
+    "Agathos_Daimon": {
+      "type": "recurring monthly"
+    },
+    "Kourotrophos__Hekate__Artemis": {
+      "type": "sacrifice"
+    },
+    "The_Heroines": {
+      "type": "sacrifice"
+    },
+    "Hera_Thelkhina": {
+      "type": "sacrifice"
+    },
+    "Zeus_Epoptes": {
+      "type": "sacrifice"
+    },
+    "Niketeria": {
+      "type": "festival"
+    },
+    "Basile": {
+      "type": "sacrifice"
+    },
+    "Genesios": {
+      "type": "festival"
+    },
+    "Epops": {
+      "type": "sacrifice"
+    },
+    "Artemis_Agrotera": {
+      "type": "sacrifice"
+    },
+    "Demokratia": {
+      "type": "festival"
+    },
+    "Eleusinia_ta_megala": {
+      "type": "festival"
+    },
+    "Epidauria_": {
+      "type": "festival"
+    },
+    "Nymphs__Akhelous__Alokhus__Hermes__Gaia_Athene": {
+      "type": "sacrifice"
+    },
+    "Proerosia": {
+      "type": "festival"
+    },
+    "Puanepsia": {
+      "type": "festival"
+    },
+    "Theseia": {
+      "type": "festival"
+    },
+    "Stenia": {
+      "type": "festival"
+    },
+    "Thesmoforia": {
+      "type": "festival"
+    },
+    "Khalkeia": {
+      "type": "festival"
+    },
+    "Pompaia_": {
+      "type": "festival"
+    },
+    "Plerosia": {
+      "type": "festival"
+    },
+    "Lesser_Dionusia_": {
+      "type": "festival"
+    },
+    "Zeus_Horios": {
+      "type": "sacrifice"
+    },
+    "Haloa": {
+      "type": "festival"
+    },
+    "Apollon_Apotropaius__Apollon_Nymphegetes__Nymphs": {
+      "type": "sacrifice"
+    },
+    "Athene": {
+      "type": "sacrifice"
+    },
+    "Lenaia": {
+      "type": "festival"
+    },
+    "Theogamia": {
+      "type": "festival"
+    },
+    "Kourotrophos__Hera__Zeus_Teleius__Poseidon": {
+      "type": "sacrifice"
+    },
+    "Dionusos": {
+      "type": "sacrifice"
+    },
+    "Anthesteria": {
+      "type": "festival"
+    },
+    "Lesser_Mysteries": {
+      "type": "festival"
+    },
+    "Diasia": {
+      "type": "festival"
+    },
+    "Asklepieia": {
+      "type": "festival"
+    },
+    "Dionusia_ta_astika": {
+      "type": "festival"
+    },
+    "Pandia": {
+      "type": "festival"
+    },
+    "Delphinia": {
+      "type": "festival"
+    },
+    "Mounukhia": {
+      "type": "festival"
+    },
+    "Olumpeia": {
+      "type": "festival"
+    },
+    "Leukaspis": {
+      "type": "sacrifice"
+    },
+    "Tritopatores": {
+      "type": "sacrifice"
+    },
+    "Leto__Pythian_Apollon__Zeus__Hermes__Dioskuri": {
+      "type": "sacrifice"
+    },
+    "Thargelia": {
+      "type": "festival"
+    },
+    "Zeus_Epakrios": {
+      "type": "sacrifice"
+    },
+    "Bendideia": {
+      "type": "festival"
+    },
+    "Menedeius": {
+      "type": "sacrifice"
+    },
+    "Kallunteria": {
+      "type": "festival"
+    },
+    "Plunteria": {
+      "type": "festival"
+    },
+    "Arrephoria": {
+      "type": "festival"
+    },
+    "Kourotrophos__Athene_Polias__Aglaurus__Zeus_Polieus__Poseidon__Pandrosos": {
+      "type": "sacrifice"
+    },
+    "Skira": {
+      "type": "festival"
+    },
+    "Bouphonia_Dipolieia": {
+      "type": "festival"
+    },
+    "Eleusinia": {
+      "type": "festival"
+    },
+    "Panathanaia_ta_megala": {
+      "type": "festival"
+    }
+  }
+}

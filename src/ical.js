@@ -1,4 +1,6 @@
 const ical = require('ical-generator');
+const flatten = require('./util').flatten;
+
 const cal = ical({
   domain: 'attic-calendar',
   prodId: {company: 'https://github.com/DictumMortuum/attic-calendar', product: 'attic-calendar'},
@@ -9,10 +11,6 @@ const template = {
   organizer: 'Δημήτρης Ραβιόλος <dimitris.raviolos@gmail.com>',
   lastModified: new Date()
 }
-
-const flatten = list => list.reduce(
-  (a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []
-);
 
 const day = ({
   attic_day,
@@ -26,7 +24,6 @@ const day = ({
   let uid = attic_olympiad + '_' + attic_year + '_' + attic_month + '_' + attic_day;
 
   if (moon_event !== '') {
-
     cal.createEvent({
       ...template,
       uid: uid + '_moon',
@@ -47,7 +44,7 @@ const day = ({
 
 const month = m => {
   m.map(day);
-  
+
   let tmp = m.map(d => d.hmepa_festival);
   let festivals = [...new Set(flatten(tmp))];
 
