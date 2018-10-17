@@ -32,7 +32,8 @@
   },
   "festivals": {
     "Noumenia": {
-      "type": "recurring monthly"
+      "type": "recurring monthly",
+      "gr": "Νουμηνία"
     },
     "Athene_": {
       "type": "recurring monthly"
@@ -68,7 +69,8 @@
       "type": "festival"
     },
     "Agathos_Daimon": {
-      "type": "recurring monthly"
+      "type": "recurring monthly",
+      "gr": "ἀγαθός δαίμων"
     },
     "Kourotrophos__Hekate__Artemis": {
       "type": "sacrifice"

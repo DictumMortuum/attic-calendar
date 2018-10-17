@@ -10,7 +10,7 @@ const cal = ical({
 const template = {
   organizer: 'Δημήτρης Ραβιόλος <dimitris.raviolos@gmail.com>',
   lastModified: new Date()
-}
+};
 
 const uid = ({
   attic_olympiad,
@@ -30,7 +30,7 @@ const month = m => {
       end: attic_day_start,
       summary: attic_day + " " + attic_month
     });
-  })
+  });
 
   // Registers moon events.
   m.filter(d => d.moon_event !== '').map(d => {

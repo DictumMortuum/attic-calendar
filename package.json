@@ -32,6 +32,9 @@
     "meeussunmoon": "^2.1.0",
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.21",
-    "suncalc": "^1.8.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "suncalc": "^1.8.0",
+    "wikijs": "^4.8.1"
   }
 }
