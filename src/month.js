@@ -11,25 +11,8 @@ const extract = ($, {olympiad, year, month}) => {
     let attr = $(el).attr();
     let events = [];
 
-    $('b > img', el).each((_, img) => {
-      events.push({
-        ...$(img).attr(),
-        type: 'festival'
-      });
-    });
-
-    $('i > img', el).each((_, img) => {
-      events.push({
-        ...$(img).attr(),
-        type: 'sacrifice'
-      });
-    });
-
-    $('td > img', el).each((_, img) => {
-      events.push({
-        ...$(img).attr(),
-        type: 'recurring monthly'
-      });
+    $('img', el).each((_, img) => {
+      events.push($(img).attr());
     });
 
     $('font > img', el).each((_, img) => {

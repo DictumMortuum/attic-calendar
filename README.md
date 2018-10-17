@@ -19,7 +19,7 @@ There are certain events that I skipped on purpose (equinoxes, solstices, cross 
 ## Usage
 
 - Untar the `.tar.gz` file under `./assets`.
-- `node index.js <<olympiad number>>
+- `node index.js <<olympiad number>>`
 
 I've already generated the file for the 699th Olympiad and the 700th Olympiad under `target`.
 
