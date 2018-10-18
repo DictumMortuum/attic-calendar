@@ -1,7 +1,7 @@
 'use strict';
 
-const transforms = require('./festivals.json').transforms;
-const festivals = require('./festivals.json').festivals;
+const transforms = require('../data/transforms.json');
+const festivals = require('../data/festivals.json');
 const flatten = require('./util').flatten;
 const festival_re = /Images\/(.*).gif.html/;
 const is_festival = ({alt}) => alt === '';

@@ -1,5 +1,5 @@
 const request = require('request-promise');
-const festivals = require('./src/festivals.json').festivals;
+const festivals = require('./data/festivals.json');
 const festivals_new = {...festivals};
 
 const args = '?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=';
@@ -21,6 +21,4 @@ const search = async term => {
 
 Object.keys(festivals).map(f => {
   search(f);
-}).then(d => {
-  console.log(d);
-})
+});
