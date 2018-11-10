@@ -27,5 +27,20 @@
     "Mounukhion",
     "Thargelion",
     "Skirophorion"
-  ]
+  ],
+  "translations": {
+    "Gamelion": "Γαμηλιὼν",
+    "Anthesterion": "Ἀνθεστηριὼν",
+    "Elaphebolion": "Ἐλαφηβολιὼν",
+    "Mounukhion": "Μουνυχιὼν",
+    "Thargelion": "Θαργηλιὼν",
+    "Skirophorion": "Σκιροφοριὼν",
+    "Hekatombaion": "Ἑκατομβαιὼν",
+    "Metageitnion": "Μεταγειτνιὼν",
+    "Boedromion": "Βοηδρομιὼν",
+    "Puanepsion": "Πυανεψιὼν",
+    "Maimakterion": "Μαιμακτηριὼν",
+    "Poseideon": "Ποσειδεὼν",
+    "Poseideon-2": "Ποσειδεὼν 2"
+  }
 }

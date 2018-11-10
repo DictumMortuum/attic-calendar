@@ -4,6 +4,7 @@ const sunset = require('./sunset');
 const moon = require('./moon');
 const festival = require('./festival');
 const re = /(\d+) (\d+)-<br>(\d+)-(\d+)\/(\d+)-?(\d+)?/;
+const {translations} = require('../data/months.json');
 
 const date = ([attic_day, year, month, day, day_end, month_end]) => ({
   attic_day,
@@ -29,6 +30,7 @@ module.exports = ({
     attic_day_start: today_sunset,
     attic_day_end: tomorrow_sunset,
     attic_month,
+    attic_month_translated: translations[attic_month],
     attic_year,
     attic_olympiad,
     ...festival(events),

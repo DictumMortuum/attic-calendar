@@ -35,6 +35,6 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "suncalc": "^1.8.0",
-    "wikijs": "^4.8.1"
+    "yaml": "^1.0.1"
   }
 }

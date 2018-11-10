@@ -10,6 +10,10 @@ Also marked are the phases of the moon, which I calculate independently from the
 
 There are certain events that I skipped on purpose (equinoxes, solstices, cross quarters, etc), as I don't think that they were observed in the Attic calendar. You can read more about them in this [wikipedia](https://en.wikipedia.org/wiki/Wheel_of_the_Year) article.
 
+Additionally, there are multiple sacrifices from the deme of Erchia that I will skip from the calendar, as each deme was supposed to have a sacrifice calendar of each own. According to [this](https://en.wikipedia.org/wiki/Erchia) wikipedia article:
+
+> Much of what is known about Erchia comes from a lex sacra (sacred law) of the deme.[6] In it are listed 59 annual sacrifices to 46 divinities (gods, nymphs and heroes), for a total cost of 547 drachmae; 21 of these sacrifices were made in the deme itself, the other 38 in the neighboring demoi or in Athens.
+
 ## Improvements
 
 - Translate all names in both greek and english.
