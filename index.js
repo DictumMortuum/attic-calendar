@@ -3,7 +3,7 @@
 const path = "./assets/www.numachi.com/~ccount/hmepa/calendars";
 const glob = require('glob-promise');
 const ical = require('./src/ical');
-const months = require('./src/months.json');
+const months = require('./data/months.json');
 const month = require('./src/month');
 const args = process.argv.slice(2);
 

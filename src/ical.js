@@ -1,5 +1,7 @@
 const ical = require('ical-generator');
-const flatten = require('./util').flatten;
+const {flatten} = require('./util');
+const YAML = require('yaml');
+const fs = require('fs');
 
 const cal = ical({
   domain: 'attic-calendar',
@@ -10,7 +12,7 @@ const cal = ical({
 const template = {
   organizer: 'Δημήτρης Ραβιόλος <dimitris.raviolos@gmail.com>',
   lastModified: new Date()
-}
+};
 
 const uid = ({
   attic_olympiad,
@@ -20,17 +22,18 @@ const uid = ({
 }, id = "") => attic_olympiad + '_' + attic_year + '_' + attic_month + '_' + attic_day + '_' + id
 
 const month = m => {
+  // Registers days
   m.map(d => {
-    let {attic_day_start, attic_day, attic_month} = d;
+    let {attic_day_start, attic_day, attic_month_translated} = d;
 
     cal.createEvent({
       ...template,
       uid: uid(d),
       start: attic_day_start,
       end: attic_day_start,
-      summary: attic_day + " " + attic_month
+      summary: attic_day + " " + attic_month_translated
     });
-  })
+  });
 
   // Registers moon events.
   m.filter(d => d.moon_event !== '').map(d => {
@@ -52,14 +55,27 @@ const month = m => {
     let {attic_day_end} = days[days.length-1];
     let {type} = hmepa_festival_info[f];
 
-    cal.createEvent({
-      ...template,
-      uid: uid(days[0], f),
-      start: attic_day_start,
-      end: type === 'festival' ? attic_day_end : attic_day_start,
-      summary: f,
-      description: type
-    });
+    // Skipping erchian sacrifices
+    // Also temporarily skipping monthly recurring observances due to lack of information.
+    if (type !== 'sacrifice' && type !== 'recurring monthly') {
+
+      try {
+        let file = fs.readFileSync('./locale/el/' + f + '.yaml', 'utf8');
+        let {name, description}= YAML.parse(file);
+
+        cal.createEvent({
+          ...template,
+          uid: uid(days[0], f),
+          start: attic_day_start,
+          end: attic_day_end,
+          summary: name,
+          description
+        });
+      } catch(e) {
+        console.log('The description of festival ' + f + ' was not found. It is observed from: ' + attic_day_start + ' to: ' + attic_day_end);
+        console.log(e.message);
+      }
+    }
   });
 }
 
