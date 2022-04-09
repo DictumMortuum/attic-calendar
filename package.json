@@ -30,7 +30,7 @@
     "icalendar": "^0.7.1",
     "lune": "^0.4.0",
     "meeussunmoon": "^2.1.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.21",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
