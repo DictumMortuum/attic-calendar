@@ -31,7 +31,7 @@
     "lune": "^0.4.0",
     "meeussunmoon": "^2.1.0",
     "moment": "^2.29.2",
-    "moment-timezone": "^0.5.21",
+    "moment-timezone": "^0.5.35",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "suncalc": "^1.8.0",
